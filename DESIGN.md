@@ -1,5 +1,5 @@
-name: taromi-design (fatemeh)
-description: Shared Taromi family system. Paper canvas, deep ink, one engineering-blue accent. Calm, precise, trustworthy; reads like a well-set technical document, not a marketing page.
+name: fatemeh-taromi-design
+description: Engineering-drawing identity. Warm paper canvas with a faint 32px drafting grid, one ink-blue accent, square-ish 6px corners, a pipe-routing drawing with dimension lines as the hero visual. Calm and exact, like a checked drawing sheet.
 colors:
   canvas: "#f6f3ec"
   surface: "#ffffff"
@@ -7,14 +7,13 @@ colors:
   muted: "#5d6775"
   accent: "#1f5f8b"
   line: "#e3ded3"
+  dark-canvas: "#0f141c"
+  dark-accent: "#6fb3e0"
 typography:
-  family-en: Inter
-  family-fa: Vazirmatn
-  mono: JetBrains Mono (dates, eyebrows only)
-  display: { fontSize: 46px, fontWeight: 700, lineHeight: 1.08, letterSpacing: -0.02em }
-  heading: { fontSize: 22px, fontWeight: 650 }
-  body: { fontSize: 17px, lineHeight: 1.65 }
+  display: { fontFamily: "Inter / Vazirmatn", fontSize: "clamp(30px,4.6vw,52px)", fontWeight: 750, lineHeight: 1.12 }
+  body: { fontFamily: "Inter / Vazirmatn", fontSize: 17px, lineHeight: 1.7 (fa 1.95) }
+  mono: { fontFamily: "JetBrains Mono", use: eyebrow and dates }
 spacing-unit: 8px
-radius: 14px
-layout: sticky 300px aside (contact, languages, availability) + content column; job rows date|body; chips for skills; letter page is a single paper card with copy/print.
-motion: hero fade once; hover lift 2px on job cards; reduced-motion honored.
+radius: 6px
+layout: hero split (copy / drawing), stat strip, editorial sections (260px sticky heading + content), 4-step process, contact band in accent colour.
+rules: no invented numbers (all stats come from the CV), motion only on hero entrance, hover lift on cards, RTL via logical properties, no letter-spacing on Persian.
