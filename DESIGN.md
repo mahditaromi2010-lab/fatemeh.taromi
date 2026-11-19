@@ -1,19 +1,6 @@
-name: fatemeh-taromi-design
-description: Engineering-drawing identity. Warm paper canvas with a faint 32px drafting grid, one ink-blue accent, square-ish 6px corners, a pipe-routing drawing with dimension lines as the hero visual. Calm and exact, like a checked drawing sheet.
-colors:
-  canvas: "#f6f3ec"
-  surface: "#ffffff"
-  ink: "#17202b"
-  muted: "#5d6775"
-  accent: "#1f5f8b"
-  line: "#e3ded3"
-  dark-canvas: "#0f141c"
-  dark-accent: "#6fb3e0"
-typography:
-  display: { fontFamily: "Inter / Vazirmatn", fontSize: "clamp(30px,4.6vw,52px)", fontWeight: 750, lineHeight: 1.12 }
-  body: { fontFamily: "Inter / Vazirmatn", fontSize: 17px, lineHeight: 1.7 (fa 1.95) }
-  mono: { fontFamily: "JetBrains Mono", use: eyebrow and dates }
-spacing-unit: 8px
-radius: 6px
-layout: hero split (copy / drawing), stat strip, editorial sections (260px sticky heading + content), 4-step process, contact band in accent colour.
-rules: no invented numbers (all stats come from the CV), motion only on hero entrance, hover lift on cards, RTL via logical properties, no letter-spacing on Persian.
+name: fatemeh-taromi-design-v3
+description: "Gas line". Graphite canvas with one gas-pipe yellow. Giant uppercase display name that rises letter by letter, outlined section titles that fill with yellow on scroll, an isometric pipe run that draws itself with gas flowing through it, a scrolling outline-type marquee of real skills. Fixed left rail (right in Persian) on desktop, top bar on mobile.
+colors: { bg: "#121417", panel: "#1a1e23", line: "#2a3038", ink: "#f1f1ec", mute: "#a3acb6", yellow: "#ffc933", yellow-ink: "#181400" }
+typography: { display: "Space Grotesk 700 / Vazirmatn 800, clamp(54px,11.5vw,168px), uppercase, -0.045em (no tracking in Persian)", title: "outline 2px yellow -> fill", body: "Inter 17px / 1.75 (fa 2.0)" }
+motion: hero letters (staggered), pipe draw (2.2s) + flow loop, reveal on scroll (transform/opacity), count-up numbers, marquee (pausable on hover), hover lifts. All disabled by prefers-reduced-motion.
+rules: Persian is split by word never by letter; all stats from the CV; no invented levels.
